@@ -1,11 +1,14 @@
 describe('Formulário de prática', () => {
   it('preenche o formulário e fecha o popup', () => {
-const nome = 'Brenda'
-const sobrenome = 'Rabelo'
-const email = 'brendarabelotester@gmail.com'
-const celular = '8598765432'
-const endereco = 'Rua Armando Monteiro, 540'
+    const nome = 'Brenda'
+    const sobrenome = 'Rabelo'
+    const email = 'brendarabelotester@gmail.com'
+    const celular = '8598765432'
+    const endereco = 'Rua Armando Monteiro, 540'
     cy.visit('https://demoqa.com/')
+    cy.get('body').then(($body) => {
+      $body.find('iframe').remove()
+    })
     cy.contains('Forms').should('be.visible')
     cy.contains('Forms').click()
     cy.contains('Practice Form').should('be.visible')
