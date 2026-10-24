@@ -15,7 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-const espera = 700
+const espera = 0
 
 for (const comando of ['visit', 'click', 'type', 'select', 'selectFile']) {
   Cypress.Commands.overwrite(comando, (originalFn, ...args) => {
