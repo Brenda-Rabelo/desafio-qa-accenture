@@ -4,9 +4,10 @@ Testes do DemoQA em Cypress com Cucumber e Page Object.
 
 ## Como executar
 
-
 ```bash
 npm install
+```
+```bash
 npx cypress open
 ```
 
