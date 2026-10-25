@@ -4,8 +4,11 @@ Testes do DemoQA em Cypress com Cucumber e Page Object.
 
 ## Como executar
 
+
+```bash
 npm install
 npx cypress open
+```
 
 No Cypress, escolha E2E e o Chrome. Os cenários estão em cypress/e2e/features.
 
